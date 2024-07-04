@@ -1,0 +1,94 @@
+.content {
+  padding: 20px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards horizontally */
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  overflow: hidden;
+  text-align: right; /* RTL */
+  padding: 0; /* Remove padding */
+  width: 95%; /* Increased width */
+  max-width: 1000px; /* Increased max width */
+}
+
+.ant-card-body {
+  padding: 0; /* Remove padding around the card content */
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.cardImage {
+  width: 40%; /* Adjusted width */
+  height: auto;
+  object-fit: cover;
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+.cardDetails {
+  flex-grow: 1;
+  padding: 15px; /* Reduced padding */
+}
+
+.cardTitle {
+  margin-bottom: 5px;
+  color: #ffcc00; /* Yellow color for title */
+  font-size: 24px; /* Adjusted font size for title */
+}
+
+.cardDescription {
+  color: #000;
+  font-size: 16px; /* Adjusted font size for description */
+}
+
+.cardConditions {
+  display: block;
+  color: #888;
+  margin-top: 10px;
+}
+
+.cardExpiration {
+  display: block;
+  color: #888;
+  margin-top: 10px;
+}
+
+.cardButton {
+  margin-top: 10px; /* Adjusted margin */
+  background-color: #ff4500;
+  border: none;
+  align-self: flex-start; /* Align button to the start of flex container */
+}
+
+.dealCount {
+  text-align: center;
+  margin-top: 20px;
+}

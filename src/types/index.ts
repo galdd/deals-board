@@ -1,12 +1,8 @@
-export interface Company {
-  key: string;
-  name: string;
+export interface Deal {
+  title: string;
   description: string;
-  fundingStage: string;
-  employees: string;
-  primarySector: string;
-  website: string;
-  linkedin: string;
-  logo: string; 
+  conditions: string;
+  expiration?: string;
+  link?: string;
+  image?: string;
 }
-  
