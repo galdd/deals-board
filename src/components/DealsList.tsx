@@ -60,7 +60,6 @@ const DealsList: React.FC<DealsListProps> = ({ deals, onDealSelect }) => {
   return (
     <div className="deals-list-container">
       <div className="toolbar">
-
         <Dropdown overlay={menu} className="sort-dropdown">
           <Button>
             מיין לפי כותרת {sortOrder === 'ascend' ? <SortAscendingOutlined /> : <SortDescendingOutlined />}
