@@ -1,0 +1,48 @@
+.deals-list-container {
+  padding: 24px;
+  background-color: #f7f7f7;
+  padding: 0 0 24px 0;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #333;
+  padding: 14px;
+}
+
+.search-input {
+  direction: rtl;
+  text-align: right;
+  margin-left: 16px; /* Margin between search input and sort button */
+}
+
+.search-input input::placeholder {
+  color: #555; /* Darker placeholder color */
+}
+
+.sort-dropdown {
+  margin-right: 16px; /* Margin between sort button and search input */
+}
+
+.deals-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Limit to 3 cards per row */
+  gap: 24px; /* Adjusted gap */
+  justify-items: center; /* Center the cards horizontally */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .deals-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .deals-list {
+    grid-template-columns: 1fr; /* 1 card per row for small screens */
+  }
+}

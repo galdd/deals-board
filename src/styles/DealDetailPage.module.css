@@ -1,0 +1,118 @@
+.dealDetailPage {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90vh; /* Ensure it takes 100% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  direction: rtl; /* Ensure RTL text direction */
+}
+
+.backButtonContainer {
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+.dealDetailCard {
+  display: flex;
+  flex-direction: row-reverse; /* Image on the right */
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  flex: 1;
+  height: 90vh; /* Limit the card's height to 90vh */
+}
+
+.imageContainerDetail {
+  width: 40%; /* 40% width for the image container */
+  height: 100%;
+  overflow: hidden;
+  padding: 16px;
+  display: flex; /* Use flexbox to center the image */
+  align-items: flex-start; /* Align the image to the top */
+  justify-content: center;
+}
+
+.imageContainerDetail img {
+  width: 100%;
+  height: auto;
+}
+
+.detailsContainer {
+  padding: 16px;
+  width: 60%; /* 60% width for the details container */
+  overflow-y: auto;
+  white-space: pre-wrap; /* Ensure white-space is preserved */
+}
+
+.detailsContainer h2 {
+  margin-bottom: 16px;
+  color: #333;
+  border-bottom: 2px solid #ff4500; /* Add border below the title */
+  padding-bottom: 8px;
+}
+
+.detailsContainer p {
+  margin-bottom: 8px;
+  color: #666;
+  white-space: pre-wrap; /* Ensure white-space is preserved */
+  border-bottom: 1px solid #ddd; /* Add border below paragraphs */
+  padding: 16px;
+}
+
+.detailsContainer strong {
+  display: block;
+  margin-top: 16px;
+}
+
+.cardButton {
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end; /* Align button to the right */
+  margin-top: 16px; /* Ensure margin between paragraphs and button */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .dealDetailCard {
+    flex-direction: column; /* Stack text and image vertically */
+    height: auto; /* Adjust height for responsive */
+  }
+
+  .imageContainerDetail {
+    width: 100%; /* Image takes full width */
+    height: auto;
+    align-items: center; /* Center image vertically */
+    order: 2; /* Display image after text */
+    padding: 0; /* Remove padding */
+  }
+
+  .detailsContainer {
+    width: 100%; /* Text takes full width */
+    padding: 16px;
+    order: 1; /* Display text before image */
+  }
+
+  .dealDetailPage {
+
+    height: auto; /* Ensure it takes 100% of the viewport height */
+
+  }
+  .buttonContainer {
+
+    margin-left: 32px; /* Ensure margin between paragraphs and button */
+  }
+
+}
